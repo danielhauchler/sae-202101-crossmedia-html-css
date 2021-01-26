@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* universalselektor */
+        * {
+            /* möglichst umgehen */
+        }
+        
+        /* typ selektoren */
+        h1 {
+            color: red;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        /* id -> # */
+        #my-id {
+            background-color: cadetblue;
+        }
+
+        /* class -> . */
+        .my-class {
+            background-color: darkcyan;
+        }
+        
+        [href] {
+            text-decoration: none;
+        }
+
+        [src] {
+            width: 200px;
+        }
+
+        /* attribute Wert ist gleich */
+        [src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/sae.jpg__483x372_q85_crop_subsampling-2_upscale.jpg"] {
+            border: 2px solid #189832;
+        }
+
+        /* attribute fängt an mit */
+        [src^="https"] {
+            border: 2px solid #000000;
+        }
+
+        /* html attribute endet mit */
+        [src$=".jpg"] {
+            border: 2px solid #457842;
+        }
+
+        /* html attribute enthält */
+        [src*="/resources/"] {
+            border: 2px solid #982548;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Eine Headline ersten Grades</h1>
+    
+    <!-- html element mit einer id -->
+    <div id="my-id"></div>
+
+    <!-- html element mit einer klasse -->
+    <div class="my-class"></div>
+
+    <a href="https://google.com">Google</a>
+    <img src="https://cdn-resources.ableton.com/resources/filer_thumbnails/public/2012/10/11/sae.jpg__483x372_q85_crop_subsampling-2_upscale.jpg" alt="">
+
+</body>
+</html>

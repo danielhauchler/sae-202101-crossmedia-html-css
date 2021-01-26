@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .wrapper {
+            width: 240px;
+            border: 1px solid red;
+            
+            margin: 0 0 0 0; /* -> 0 0 0 0 */
+            margin: 0; /* -> 0 0 0 0 */
+
+            margin: 0 auto; /* -> 0 15px 0 15 */
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        @media (min-width: 640px) {
+            .wrapper {
+                width: 620px;
+            }
+
+            h1 {
+                color: red;
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="teaser">
+            <h1>Headline</h1>
+            <p>Fließtext</p>
+            <span>Preis</span>
+            <div class="disturber"></div>
+        </div>
+    </div>
+</body>
+</html>
